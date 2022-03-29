@@ -33,3 +33,28 @@ function diameter(myarry){
     console.log(arry);
 }
 //diameter(radius);
+//***********************************************************************************
+//*In 1st method we have much duplicated code in among three functions which is iteration and array
+//*to get rid of this duplication we use method 2 
+//***********************************************************************************
+//********************************** 1st method ********************************// 
+var area = function(r){
+    return Math.PI * r * r; 
+}
+var circumference = function(r){
+    return 2 * Math.PI * r; 
+}
+var diameter = function(r){
+    return 2 * r; 
+}
+var calculate=function(myarray,a){
+    var arry=[];
+    for(i=0;i<myarray.length;i++){
+        var result=a(myarray[i]);
+        arry.push(result);
+    }
+    console.log(arry);
+}
+//calculate(radius,area);
+//calculate(radius,circumference);
+//calculate(radius,diameter);
