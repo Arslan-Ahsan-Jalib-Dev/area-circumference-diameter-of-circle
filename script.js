@@ -58,3 +58,7 @@ var calculate=function(myarray,a){
 //calculate(radius,area);
 //calculate(radius,circumference);
 //calculate(radius,diameter);
+//********************************** 3rd method ********************************// 
+console.log(radius.map(area));
+console.log(radius.map(circumference));
+console.log(radius.map(diameter));
